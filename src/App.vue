@@ -1,28 +1,29 @@
+<!--
+ * @Descripttion: 
+ * @version: 
+ * @Author: qiaoyurensheng@163.com
+ * @Date: 2020-06-11 00:22:45
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2020-06-11 01:24:15
+--> 
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <setUp p1="aaAAAa"></setUp>
+    <ComRef></ComRef>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import setUp from "./components/01.setup";
+import ComRef from "./components/02.ref";
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    setUp,
+    ComRef
+  },
+  name: "App"
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
