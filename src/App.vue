@@ -4,7 +4,7 @@
  * @Author: qiaoyurensheng@163.com
  * @Date: 2020-06-11 00:22:45
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2020-06-13 00:01:45
+ * @LastEditTime: 2020-06-13 00:16:12
 --> 
 <template>
   <div id="app">
@@ -26,6 +26,8 @@
 
     <hr />
     <RefDom></RefDom>
+    <hr />
+    <ComNextTick></ComNextTick>
   </div>
 </template>
 
@@ -42,6 +44,7 @@ import ComSon from "./components/09.son";
 import ComSonson from "./components/10.son-son";
 import { ref, provide } from "@vue/composition-api";
 import RefDom from "./components/11.refDOM";
+import ComNextTick from "./components/12.nextTick";
 export default {
   components: {
     setUp,
@@ -54,7 +57,8 @@ export default {
     LifeCycle,
     ComSon,
     ComSonson,
-    RefDom
+    RefDom,
+    ComNextTick
   },
   name: "App",
   setup() {
